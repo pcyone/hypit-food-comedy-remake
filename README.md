@@ -1,5 +1,14 @@
 # hypit-food-comedy-remake
 
+
+https://github.com/user-attachments/assets/97aa547e-b763-4578-b74f-4c33548c711f
+
+
+
+https://github.com/user-attachments/assets/ce5e134d-2887-4b87-92a2-3af79bab7656
+
+
+
 用 Hypit 与 HypiHub 复刻约 13 秒餐饮催菜短剧的 Codex Skill。
 
 这个 Skill 固化了一个餐饮短剧工作流：顾客催菜，老板误解成给菜“加油”，最后对着菜品连续喊“四遍加油”直到片尾。它适合把爆款参考视频里的剧情结构、镜头节奏和喜剧关系，替换成本店人物、餐厅场景和菜品。
