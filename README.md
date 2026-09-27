@@ -34,15 +34,13 @@ https://github.com/user-attachments/assets/ce5e134d-2887-4b87-92a2-3af79bab7656
   </tr>
   <tr>
     <td align="center">
-      <video src="assets/demo/original.mp4" controls width="100%"></video>
+      <video src="https://github.com/user-attachments/assets/97aa547e-b763-4578-b74f-4c33548c711f" controls width="100%"></video>
     </td>
     <td align="center">
-      <video src="assets/demo/remake.mp4" controls width="100%"></video>
+      <video src="https://github.com/user-attachments/assets/ce5e134d-2887-4b87-92a2-3af79bab7656" controls width="100%"></video>
     </td>
   </tr>
 </table>
-
-公开仓库默认不包含私有示例视频。需要展示时，把原视频放到 `assets/demo/original.mp4`，把复刻二创视频放到 `assets/demo/remake.mp4`。
 
 ## 安装
 
