@@ -1,0 +1,21 @@
+<?svml using="@hypit/markup@1"?>
+<svml>
+<import as="text" from="@hypit/text@1"/>
+<import as="media" from="@hypit/media@1"/>
+<import as="mimo" from="@hypit/mimo-speech@1"/>
+<media:Audio id="female-voice" src="./assets/female-voice-reference.wav"/>
+<media:Audio id="male-voice" src="./assets/male-voice-reference.wav"/>
+<text:Value id="line1">酿豆腐好了没？你快点呀！</text:Value>
+<text:Value id="line2">还在煎呢。</text:Value>
+<text:Value id="line3">那你催一下。</text:Value>
+<text:Value id="line4">正煎着呢，我咋催嘛？</text:Value>
+<text:Value id="line5">你催一下嘛！</text:Value>
+<text:Value id="line6">豆腐加油！豆腐加油！</text:Value>
+<mimo:VoiceClone id="customer1" speech={line1} voice={female-voice}>同一女声，语气稍着急，轻快连贯，像日常催菜，不逐字停顿，不拖字，约两秒。</mimo:VoiceClone>
+<mimo:VoiceClone id="boss1" speech={line2} voice={male-voice}>同一男声，很自然地快速回答，语气平常，不拖字。</mimo:VoiceClone>
+<mimo:VoiceClone id="customer2" speech={line3} voice={female-voice}>同一女声，轻快地提出要求，自然连贯，不拖字。</mimo:VoiceClone>
+<mimo:VoiceClone id="boss2" speech={line4} voice={male-voice}>同一男声，很困惑地快速问，语气生活化，不逐字停顿，不拖字。</mimo:VoiceClone>
+<mimo:VoiceClone id="customer3" speech={line5} voice={female-voice}>同一女声，轻快坚持催促，尾音轻巧，不拖字。</mimo:VoiceClone>
+<mimo:VoiceClone id="cheer-a" speech={line6} voice={male-voice}>同一男声，兴奋地放声大喊，像比赛现场拼命给队友加油！胸腔发力，明亮高亢，短促有冲劲，强烈重读加油。两句快速连贯，每句约一秒，只读正文。</mimo:VoiceClone>
+<mimo:VoiceClone id="cheer-b" speech={line6} voice={male-voice}>同一男声，热血沸腾地高声呐喊，越喊越激动！重音爆发，声音向前冲，像在场边用力拍手助威。两句快速连贯，每句约一秒，结尾干脆有力，只读正文。</mimo:VoiceClone>
+</svml>

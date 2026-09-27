@@ -1,0 +1,31 @@
+<?svml using="@hypit/markup@1"?>
+<svml>
+<import as="media" from="@hypit/media@1"/>
+<import as="pipeline" from="@hypit/media-pipeline@1"/>
+<import as="time" from="@hypit/timeline-author@1"/>
+<import as="space" from="@hypit/spatial@1"/>
+<import as="track" from="@hypit/media-track@1"/>
+<import as="audio" from="@hypit/audio-track@1"/>
+<import as="film" from="@hypit/film@1"/>
+<import as="render" from="@hypit/render-hyperframes@1"/>
+<import as="look" source="./look.svs"/>
+<media:Video id="picture" src="./output/review-picture-silent.mp4"/>
+<media:Audio id="sound" src="./output/voice-master.wav"/>
+<time:Clock id="clock" frame-rate="30"/>
+<space:Canvas id="canvas" width="720" height="1280"/>
+<space:Frame id="full" within={canvas} left="0%" top="0%" right="100%" bottom="100%"/>
+<time:Timeline id="program" clock={clock} end="13s"/>
+<pipeline:Normalize id="picture-media" source={picture} clock={clock} video="primary-moving" audio="none" span-authority="video"/>
+<pipeline:Normalize id="sound-media" source={sound} clock={clock} video="none" audio="default" span-authority="audio"/>
+<track:Track id="pictures" timeline={program.timeline} canvas={canvas}>
+<track:Item id="comedy" media={picture-media.media} frame={full} appearance={look.media.full} at="0s" for="13s"/>
+</track:Track>
+<audio:Track id="dialogue" timeline={program.timeline}>
+<audio:Item id="soundtrack" source={sound-media.media} at="0s" for="13s" playback="once"/>
+</audio:Track>
+<film:Film id="main" canvas={canvas} timeline={program.timeline} appearance={look.film.main}>
+<film:Track source={pictures.visual}/>
+<film:Track source={dialogue.audio}/>
+</film:Film>
+<render:Video id="final" composition={main.composition} timeline={program.timeline}/>
+</svml>

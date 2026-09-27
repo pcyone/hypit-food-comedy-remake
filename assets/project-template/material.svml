@@ -1,0 +1,44 @@
+<?svml using="@hypit/markup@1"?>
+<svml>
+<import as="media" from="@hypit/media@1"/>
+<import as="text" from="@hypit/text@1"/>
+<import as="seedance" from="@hypit/seedance@1"/>
+<media:Image id="woman" src="./assets/waiboyun.png"/>
+<media:Image id="man" src="./assets/ketuoyan.png"/>
+<media:Image id="room" src="./assets/restaurant.jpg"/>
+<media:Image id="tofu" src="./assets/tofu-reference-20_6.jpg"/>
+<media:Image id="tofu-finish" src="./assets/tofu-reference-26_4.jpg"/>
+<media:Video id="reference" src="./assets/story-reference.mp4"/>
+<media:Audio id="female-voice" src="./assets/female-voice-reference.wav"/>
+<media:Audio id="male-voice" src="./assets/male-voice-reference.wav"/>
+<text:Value id="direction">
+Recreate the 13-second Chinese restaurant comedy in @video1, preserving its handheld back-and-forth camera, impatient questioning, baffled reaction, and literal-minded clapping punchline. Replace ALL people, location and food with these references.
+@image1 is ONE adult woman Waiboyun, shown from multiple angles: short chestnut bob, black rectangular glasses, green-hazel eyes, fitted gray square-neck long-sleeve dress, white heels. She replaces the original male customer.
+@image2 is ONE adult man Ketuoyan: short spiky chestnut hair, rectangular glasses, green-hazel eyes, black suit, white T-shirt, black trousers. He replaces the boss.
+Preserve the character sheets' distinctive polished 3D faces, facial proportions, hair, clothes and glasses throughout. Render exactly two characters, no duplicated bodies or sheet graphics. Do not turn them into the real people from @video1.
+@image3 is the exact restaurant: large illuminated Hakka tulou mural, wood-slat ceiling, gray brick wall, cream black-frame dining chairs, glass-topped tables. All action takes place INSIDE this restaurant. Place a shallow black skillet on a compact tabletop cooker on a serving table. Integrate both 3D characters with the restaurant's realistic warm lighting, contact shadows and correct scale.
+@image4 and @image5 define ONLY the food: thick rectangular Hakka stuffed tofu with visible minced pork filling, golden fried surfaces, glossy brown simmering sauce and gentle steam in a black skillet. No buns, bamboo steamers, dumplings or other food. These food views were taken only from the user's authorized 20–27 second excerpt.
+@video1 guides ONLY the performance, timing and handheld camera. Never retain its actors, masked workers, street, bun stall, subtitles, watermarks, headlines or original voices.
+
+TIMED ACTION AND EXACT CHINESE DIALOGUE:
+Use @audio1 as the adult female vocal identity and @audio2 as the adult male vocal identity. Adapt their emotions to this performance.
+0.0–2.1s: Waiboyun looks toward the boss, brisk impatient adult FEMALE voice: “酿豆腐好了没？你快点呀！”
+2.2–3.3s: pan to Ketuoyan beside the pan; natural adult MALE voice: “还在煎呢。”
+3.5–4.5s: return toward Waiboyun: “那你催一下。”
+4.8–6.7s: Ketuoyan genuinely puzzled: “正煎着呢，我咋催嘛？”
+6.85–8.15s: Waiboyun insists: “你催一下嘛！” The boss glances at the tofu, bends toward it and lifts his hands.
+8.35–13.0s: Ketuoyan enthusiastically CLAPS at the tofu and continuously chants FOUR complete calls: “豆腐加油！豆腐加油！豆腐加油！豆腐加油！” Start calls around 8.4, 9.6, 10.8 and 12.0 seconds. Like an excited sports spectator, shout with chest support, bright projection and strong accents on 加油. Synchronize each syllable with visible speaking mouth movement and the energetic claps. Finish the fourth 油 naturally just before the end. Keep him speaking through the ending; do not turn the final second into silent reaction. Waiboyun can look confused in the background. 加油 means cheering, never pouring oil. Only the man speaks these four calls.
+
+One coherent handheld encounter with quick alternating pans as in the reference, no unrelated food montage. Natural conversational Mandarin, not robotic syllables; 酿豆腐 is niàng dòu fu. Each person speaks only their own lines with matching mouth motion. No overlapping voices, swapped voices, narrator, music or laugh track. Soft pan sizzle and handclaps below voices. Full-frame 9:16, no blur-fill bars. No text or subtitles generated; they will be added in post.
+</text:Value>
+<seedance:ReferenceVideo id="remake" model="mini" prompt={direction} duration="13" resolution="720p" aspect-ratio="9:16" generate-audio="true">
+<seedance:Reference image={woman} person-reference="true"/>
+<seedance:Reference image={man} person-reference="true"/>
+<seedance:Reference image={room} person-reference="false"/>
+<seedance:Reference image={tofu} person-reference="false"/>
+<seedance:Reference image={tofu-finish} person-reference="false"/>
+<seedance:Reference video={reference} person-reference="true"/>
+<seedance:Reference audio={female-voice}/>
+<seedance:Reference audio={male-voice}/>
+</seedance:ReferenceVideo>
+</svml>

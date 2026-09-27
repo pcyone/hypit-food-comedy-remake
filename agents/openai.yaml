@@ -1,0 +1,4 @@
+interface:
+  display_name: "催菜加油短剧复刻"
+  short_description: "用Hypit复刻催菜变加油短剧，固定双主角与餐厅，保留完整喊话和顶部字幕"
+  default_prompt: "使用 $hypit-food-comedy-remake，按已保存的人物、餐厅和四遍喊话节奏制作一条催菜短剧。"

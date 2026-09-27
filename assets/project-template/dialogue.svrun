@@ -1,0 +1,2 @@
+<?svml using="@hypit/run-markup@1"?>
+<svrun version="1"><author source="./dialogue.svml"/><target output="customer1.audio"/><target output="boss1.audio"/><target output="customer2.audio"/><target output="boss2.audio"/><target output="customer3.audio"/><target output="cheer-a.audio"/><target output="cheer-b.audio"/></svrun>
