@@ -25,6 +25,25 @@ https://github.com/user-attachments/assets/ce5e134d-2887-4b87-92a2-3af79bab7656
 
 “加油”是给菜鼓劲，不是往菜里倒食用油。
 
+## 示例视频
+
+<table>
+  <tr>
+    <th width="50%">原视频</th>
+    <th width="50%">复刻二创视频</th>
+  </tr>
+  <tr>
+    <td align="center">
+      <video src="assets/demo/original.mp4" controls width="100%"></video>
+    </td>
+    <td align="center">
+      <video src="assets/demo/remake.mp4" controls width="100%"></video>
+    </td>
+  </tr>
+</table>
+
+公开仓库默认不包含私有示例视频。需要展示时，把原视频放到 `assets/demo/original.mp4`，把复刻二创视频放到 `assets/demo/remake.mp4`。
+
 ## 安装
 
 把仓库放到 Codex Skills 目录中：
@@ -149,10 +168,11 @@ python3 scripts/verify_delivery.py \
 │   └── openai.yaml
 ├── assets/
 │   ├── baseline-v3/
+│   ├── demo/
 │   ├── project-template/
 │   └── reference/
 ├── references/
-│   ├── asset-manifest.json
+│   ├── asset-manifest.md
 │   ├── baseline.md
 │   └── workflow.md
 └── scripts/
